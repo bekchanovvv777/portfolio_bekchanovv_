@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bekchanovv_</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- === HEADER SECTION === -->
+<div id="header">
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav>
+            <img src="./assets/header-logo.png" class="logo" alt="Logo">
+
+            <ul id="sidemenu">
+                <li><a href="#header">Bosh sahifa</a></li>
+                <li><a href="#about">Men haqimda</a></li>
+                <li><a href="#services">Xizmatlar</a></li>
+                <li><a href="#portfolio">Ishlar to‘plami</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+
+            <i class="fa-solid fa-list" onclick="openmenu()"></i>
+        </nav>
+
+        <!-- Header Text -->
+        <div class="header-text">
+            <p>Web developer</p>
+            <h1>Salom,<br>Mening ismim <span>Sulaymon</span></h1>
+        </div>
+
+    </div>
+</div>
+
+    <!-- -----------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/backgraund-img.png ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Men haqimda</h1>
+                    <p>Salom! Mening ismim Sulaymon, 16 yoshdaman. Men Xorazimlikman, hozirda Toshkentda yashayman. Texnologiya va yangi imkoniyatlarga qiziqaman, doimo o‘zimni rivojlantirishga intilaman.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Qiziqishlarim</p>
+                        <p class="tab-links" onclick="opentab('experience')">Ta’lim / O‘qish joyim</p>
+                        <p class="tab-links" onclick="opentab('education')">Kelajakdagi maqsadlarim</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>1- </span>IT texnologiyalari va dasturlashga qiziqaman.</li>
+                            <li><span>2- </span>Video o‘yinlar o‘ynash orqali strategik fikrlash va kreativlikni rivojlantiraman.</li>
+                            <li><span>3- </span>Sayohat qilib, yangi joylarni kashf etish va yangi tajribalar orttirishni yoqtiraman.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1- </span>Avval davlat maktabida ta’lim olganman.</li>
+                            <li><span>2- </span>Hozirda esa PDP xususiy maktabida bilimlarimni chuqurlashtiryapman.</li>
+                            <li><span>3- </span>O‘qish orqali zamonaviy texnologiyalar va web dasturlash bo‘yicha ko‘nikmalarni oshirmoqdaman.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>1- </span>Professional darajadagi web dasturchi bo‘lishni maqsad qilganman.</li>
+                            <li><span>2- </span>Yangi va innovatsion loyihalar yaratishni istayman.</li>
+                            <li><span>3- </span>O‘z bilimlarimni oshirib, katta va qiziqarli loyihalarda ishtirok etishni niyat qilaman.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services------------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Xizmatlar</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Veb-saytlarni loyihalash</h2>
+                    <p>Oddiy va chiroyli sahifalar yaratish (masalan: shaxsiy portfolio, blog, landing page).</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <!-- <i class="fa-solid fa-crop-simple"></i> -->
+                    <h2>HTML va CSS yordamida sahifa tuzish</h2>
+                    <p>Oddiy web-sahifalarni kodlash va dizayn qilish.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-comment-nodes"></i>
+                    <h2>Texnik maslahat va yordam</h2>
+                    <p>Web-sayt yaratish bo‘yicha maslahat berish yoki o‘rganishda yordam.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- --------------portfolio------------- -->
+
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Ishlar to‘plami</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/sayt1.png" class="portfolio-img">
+                    <div class="layer">
+                        <h3>Information about Cars</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptate hic officiis laudantium rem harum similique facilis.</p>
+                        <a href="https://drive-guide-db.lovable.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/sayt2.png" class="portfolio-img">
+                    <div class="layer">
+                        <h3>Hujjat yaratuvchi</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptate hic officiis laudantium rem harum similique facilis.</p>
+                        <a href="https://hujjat-yaratuvchi-ai.lovable.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/sayt3.png" class="portfolio-img">
+                    <div class="layer">
+                        <h3>The World of Plants</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptate hic officiis laudantium rem harum similique facilis.</p>
+                        <a href="https://yashiluy.lovable.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+     </div>
+
+     <!-- -------------contact------------- -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Aloqa</h1>
+                    <p><i class="fa-regular fa-envelope"></i>sulaymonb70@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+998 97-529-1707, +998 95-429-1757</p>
+                    <p><i class="fa-brands fa-telegram"></i>@bekchanovv707, @bekchanovv77</p>
+                    <p><i class="fa-brands fa-instagram"></i>bekchanovv_</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/bekchanovv707"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/bekchanovv_?igsh=c2hxZWpzbmoycDhy"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <!-- <a href="" class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">So‘rovni tasdiqlash</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sulaymon. Made wtih <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+     </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
